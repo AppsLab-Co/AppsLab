@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - AI Doc Scanner – PDF OCR</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <style>
+        :root {
+            --md-sys-color-primary: #6750A4;
+            --md-sys-color-on-primary: #FFFFFF;
+            --md-sys-color-primary-container: #EADDFF;
+            --md-sys-color-on-primary-container: #21005D;
+            --md-sys-color-secondary: #625B71;
+            --md-sys-color-on-secondary: #FFFFFF;
+            --md-sys-color-secondary-container: #E8DEF8;
+            --md-sys-color-on-secondary-container: #1D192B;
+            --md-sys-color-surface: #FEF7FF;
+            --md-sys-color-on-surface: #1D1B20;
+            --md-sys-color-surface-variant: #E7E0EC;
+            --md-sys-color-on-surface-variant: #49454F;
+            --md-sys-color-outline: #79747E;
+            --md-sys-color-outline-variant: #CAC4D0;
+            --md-sys-color-background: #FEF7FF;
+            --md-sys-color-on-background: #1D1B20;
+            
+            --md-sys-elevation-1: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+            --md-sys-elevation-2: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+            --md-sys-elevation-3: 0px 4px 8px 3px rgba(0, 0, 0, 0.15), 0px 1px 3px rgba(0, 0, 0, 0.3);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--md-sys-color-background);
+            color: var(--md-sys-color-on-background);
+            line-height: 1.6;
+        }
+
+        .md-top-app-bar {
+            background-color: var(--md-sys-color-surface);
+            color: var(--md-sys-color-on-surface);
+            padding: 8px 16px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: var(--md-sys-elevation-2);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .md-top-app-bar.elevated {
+            box-shadow: var(--md-sys-elevation-3);
+        }
+
+        .app-bar-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            min-height: 64px;
+        }
+
+        .app-logo {
+            height: 40px;
+            width: 40px;
+            object-fit: contain;
+            transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .app-logo:hover {
+            transform: scale(1.05);
+        }
+
+        .app-title {
+            font-size: 20px;
+            font-weight: 500;
+            letter-spacing: 0;
+            color: var(--md-sys-color-on-surface);
+        }
+
+        .container {
+            max-width: 840px;
+            margin: 0 auto;
+            padding: 24px 16px 80px;
+        }
+
+        .md-typescale-headline-large {
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 40px;
+            letter-spacing: 0;
+            color: var(--md-sys-color-on-surface);
+            margin-bottom: 16px;
+        }
+
+        .md-typescale-headline-medium {
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 36px;
+            letter-spacing: 0;
+            color: var(--md-sys-color-on-surface);
+            margin: 40px 0 16px;
+        }
+
+        .md-typescale-title-large {
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 28px;
+            letter-spacing: 0;
+            color: var(--md-sys-color-on-surface);
+            margin-bottom: 8px;
+        }
+
+        .md-typescale-body-large {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.5px;
+            color: var(--md-sys-color-on-surface-variant);
+            margin-bottom: 16px;
+        }
+
+        .md-typescale-body-medium {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: 0.25px;
+            color: var(--md-sys-color-on-surface-variant);
+        }
+
+        .md-card {
+            background-color: var(--md-sys-color-surface-variant);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 24px;
+            box-shadow: var(--md-sys-elevation-1);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .md-card:hover {
+            box-shadow: var(--md-sys-elevation-2);
+        }
+
+        ul {
+            margin-left: 24px;
+            margin-bottom: 16px;
+        }
+
+        li {
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.5px;
+            color: var(--md-sys-color-on-surface-variant);
+            margin-bottom: 8px;
+        }
+
+        strong {
+            color: var(--md-sys-color-on-surface);
+            font-weight: 500;
+        }
+
+        .md-outlined-card {
+            background-color: var(--md-sys-color-surface);
+            border: 1px solid var(--md-sys-color-outline-variant);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 32px 0;
+        }
+
+        .md-chip {
+            display: inline-flex;
+            align-items: center;
+            background-color: var(--md-sys-color-secondary-container);
+            color: var(--md-sys-color-on-secondary-container);
+            padding: 6px 16px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0.1px;
+            margin-bottom: 16px;
+        }
+
+        .md-divider {
+            height: 1px;
+            background-color: var(--md-sys-color-outline-variant);
+            margin: 32px 0;
+        }
+
+        .md-footer {
+            border-top: 1px solid var(--md-sys-color-outline-variant);
+            padding: 24px 0;
+            margin-top: 64px;
+        }
+
+        .footer-content {
+            max-width: 840px;
+            margin: 0 auto;
+            padding: 0 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .footer-text {
+            color: var(--md-sys-color-on-surface-variant);
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.25px;
+        }
+
+        .md-fab {
+            position: fixed;
+            bottom: 16px;
+            right: 16px;
+            width: 56px;
+            height: 56px;
+            background-color: var(--md-sys-color-primary-container);
+            color: var(--md-sys-color-on-primary-container);
+            border: none;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: var(--md-sys-elevation-3);
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            opacity: 0;
+            transform: scale(0);
+        }
+
+        .md-fab.visible {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .md-fab:hover {
+            background-color: #d6c3f7;
+        }
+
+        .material-symbols-outlined {
+            font-size: 24px;
+        }
+
+        @media (max-width: 768px) {
+            .app-bar-content {
+                min-height: 56px;
+            }
+
+            .app-logo {
+                height: 36px;
+                width: 36px;
+            }
+
+            .app-title {
+                font-size: 18px;
+            }
+
+            .container {
+                padding: 16px 16px 60px;
+            }
+
+            .md-typescale-headline-large {
+                font-size: 28px;
+                line-height: 36px;
+            }
+
+            .md-typescale-headline-medium {
+                font-size: 24px;
+                line-height: 32px;
+                margin: 32px 0 12px;
+            }
+
+            .md-card, .md-outlined-card {
+                padding: 16px;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    </style>
+</head>
+<body>
+    <header class="md-top-app-bar" id="topAppBar">
+        <div class="app-bar-content">
+            <img src="images/logo.png" alt="AI Doc Scanner" class="app-logo" loading="eager">
+            <h1 class="app-title">AI Doc Scanner – PDF OCR</h1>
+        </div>
+    </header>
+
+    <main class="container fade-in">
+        <h1 class="md-typescale-headline-large">Privacy Policy</h1>
+        <p class="md-typescale-body-medium" style="margin-bottom: 32px;">Last updated: November 29, 2025</p>
+
+        <section>
+            <p class="md-typescale-body-large">At AI Doc Scanner – PDF OCR, operated by XLab (By AppsLab Co.), we take your privacy seriously. This Privacy Policy explains how we collect, use, and protect your information when you use our mobile application.</p>
+        </section>
+
+        <section>
+            <h2 class="md-typescale-headline-medium">Information We Collect</h2>
+            <p class="md-typescale-body-large">AI Doc Scanner may collect the following types of information:</p>
+            <ul>
+                <li>Device information (model, operating system version)</li>
+                <li>Usage data and analytics</li>
+                <li>IP address and general location (via WiFi and network state)</li>
+                <li>App performance and crash reports</li>
+                <li>In-app purchase information for premium features</li>
+            </ul>
+            <p class="md-typescale-body-large">We do not collect personally identifiable information unless you voluntarily provide it through support communications.</p>
+        </section>
+
+        <div class="md-card">
+            <h3 class="md-typescale-title-large">App Permissions Explanation</h3>
+            <p class="md-typescale-body-large" style="margin-bottom: 12px;">AI Doc Scanner requests the following permissions to provide core functionality:</p>
+            <ul style="margin-bottom: 0;">
+                <li><strong>Camera:</strong> To scan documents and capture images for PDF creation</li>
+                <li><strong>Storage (Read/Write Media):</strong> To save scanned documents, PDFs, and access images for scanning</li>
+                <li><strong>Internet & Network Access:</strong> For cloud features, OCR processing, and displaying advertisements</li>
+                <li><strong>Biometric/Fingerprint:</strong> To secure your documents with fingerprint lock (optional feature)</li>
+                <li><strong>Notifications:</strong> To inform you about scan completion and app updates</li>
+                <li><strong>Vibration:</strong> For haptic feedback during scanning</li>
+                <li><strong>In-app Billing:</strong> To process premium subscription purchases</li>
+            </ul>
+        </div>
+
+        <section>
+            <h2 class="md-typescale-headline-medium">How We Use Your Information</h2>
+            <p class="md-typescale-body-large">The information we collect is used to:</p>
+            <ul>
+                <li>Process documents and perform OCR (Optical Character Recognition)</li>
+                <li>Improve app functionality and user experience</li>
+                <li>Analyze usage patterns and trends</li>
+                <li>Fix bugs and technical issues</li>
+                <li>Provide customer support</li>
+                <li>Process in-app purchases and manage subscriptions</li>
+                <li>Deliver relevant advertisements (free version only)</li>
+                <li>Send important notifications about app features</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 class="md-typescale-headline-medium">Document and Image Privacy</h2>
+            <div class="md-card">
+                <p class="md-typescale-body-large"><strong>Your Documents Are Private:</strong></p>
+                <ul style="margin-bottom: 0;">
+                    <li>All scanned documents are stored locally on your device</li>
+                    <li>We do not upload or store your documents on our servers</li>
+                    <li>OCR processing may use cloud services, but document content is transmitted securely and not permanently stored</li>
+                    <li>You have full control to delete any documents from your device at any time</li>
+                    <li>Biometric authentication ensures only you can access secured documents</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="md-typescale-headline-medium">Third-Party Services</h2>
+            <p class="md-typescale-body-large">AI Doc Scanner may use third-party services that collect information used to identify you. These services include:</p>
+            <ul>
+                <li>Advertising networks (Google AdMob)</li>
+                <li>Analytics providers (Google Analytics, Firebase)</li>
+                <li>Crash reporting tools (Firebase Crashlytics)</li>
+                <li>OCR and AI processing services</li>
+                <li>Payment processing (Google Play Billing)</li>
+            </ul>
+            <p class="md-typescale-body-large">These third parties have their own privacy policies governing the use of your information. We encourage you to review their policies.</p>
+        </section>
+
+        <section>
+            <h2 class="md-typescale-headline-medium">Advertising</h2>
+            <p class="md-typescale-body-large">The free version of AI Doc Scanner displays third-party advertisements. Premium subscribers enjoy an ad-free experience. Advertising partners may use cookies, web beacons, and similar technologies to collect information about your device and usage patterns to provide personalized advertisements.</p>
+            <div class="md-card">
+                <p class="md-typescale-body-large"><strong>Note:</strong> AI Doc Scanner does not have access to or control over cookies and tracking technologies used by third-party advertisers. Premium users do not see any advertisements.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="md-typescale-headline-medium">In-App Purchases and Subscriptions</h2>
+            <p class="md-typescale-body-large">AI Doc Scanner offers premium features through in-app purchases and subscriptions. When you make a purchase:</p>
+            <ul>
+                <li>Transaction information is processed securely through Google Play Billing</li>
+                <li>We receive confirmation of purchase but not your payment details</li>
+                <li>Subscription status is verified to unlock premium features</li>
+                <li>You can manage or cancel subscriptions through Google Play Store settings</li>
+            </ul>
+        </section>
+
+        <div class="md-outlined-card">
+            <span class="md-chip">Important</span>
+            <h3 class="md-typescale-title-large">Children's Privacy</h3>
+            <p class="md-typescale-body-large">AI Doc Scanner does not knowingly collect personal information from children under the age of 13. If you believe your child has provided us with personal information, please contact us immediately at <strong>help.appslab@gmail.com</strong>, and we will promptly delete such information from our records.</p>
+        </div>
+
+        <section>
+            <h2 class="md-typescale-headline-medium">Data Security</h2>
+            <p class="md-typescale-body-large">We implement appropriate technical and organizational measures to protect your information:</p>
+            <ul>
+                <li>Documents are stored locally with optional biometric protection</li>
+                <li>Secure transmission protocols for cloud-based features</li>
+                <li>Regular security updates and vulnerability assessments</li>
+            </ul>
+            <p class="md-typescale-body-large">However, no method of transmission over the internet or electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your data, we cannot guarantee absolute security.</p>
+        </section>
+
+        <section>
+            <h2 class="md-typescale-headline-medium">Log Data</h2>
+            <p class="md-typescale-body-large">When you use AI Doc Scanner, we may collect log data that includes:</p>
+            <ul>
+                <li>Internet Protocol (IP) addresses</li>
+                <li>Device type and version</li>
+                <li>Time and date of app usage</li>
+                <li>Features used and documents scanned (count only, not content)</li>
+                <li>App crashes and error reports</li>
+                <li>Network connectivity information</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 class="md-typescale-headline-medium">Changes to This Privacy Policy</h2>
+            <p class="md-typescale-body-large">We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last updated" date. Significant changes may also be communicated through in-app notifications. You are advised to review this Privacy Policy periodically for any changes.</p>
+        </section>
+
+        <section>
+            <h2 class="md-typescale-headline-medium">Your Rights and Choices</h2>
+            <p class="md-typescale-body-large">You have the right to:</p>
+            <ul>
+                <li>Access and delete your locally stored documents at any time</li>
+                <li>Disable app permissions through your device settings (may limit functionality)</li>
+                <li>Opt-out of personalized advertisements through your device settings</li>
+                <li>Cancel your subscription at any time through Google Play Store</li>
+                <li>Request deletion of any data we may have collected</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 class="md-typescale-headline-medium">Your Consent</h2>
+            <p class="md-typescale-body-large">By using AI Doc Scanner – PDF OCR, you consent to our Privacy Policy and agree to its terms.</p>
+        </section>
+
+        <div class="md-divider"></div>
+
+        <div class="md-outlined-card">
+            <h3 class="md-typescale-title-large" style="margin-bottom: 16px;">Contact Us</h3>
+            <p class="md-typescale-body-large" style="margin-bottom: 24px;">If you have any questions or concerns about this Privacy Policy or how we handle your data, please contact us:</p>
+            
+            <p class="md-typescale-body-large"><strong>Email:</strong> <a href="mailto:help.appslab@gmail.com" style="color: var(--md-sys-color-primary); text-decoration: none; cursor: pointer;" onclick="copyEmail(event)">help.appslab@gmail.com</a></p>
+            
+            <p class="md-typescale-body-large"><strong>Company:</strong> XLab (By AppsLab Co.)</p>
+            
+            <p class="md-typescale-body-medium" style="margin-top: 16px; margin-bottom: 0;">We are committed to resolving any privacy concerns you may have.</p>
+        </div>
+    </main>
+
+    <footer class="md-footer">
+        <div class="footer-content">
+            <div class="footer-text">© 2025 XLab (By AppsLab Co.) All rights reserved.</div>
+        </div>
+    </footer>
+
+    <button class="md-fab" id="scrollTopFab" aria-label="Scroll to top">
+        <span class="material-symbols-outlined">arrow_upward</span>
+    </button>
+
+    <script>
+        const topAppBar = document.getElementById('topAppBar');
+        const scrollTopFab = document.getElementById('scrollTopFab');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 0) {
+                topAppBar.classList.add('elevated');
+            } else {
+                topAppBar.classList.remove('elevated');
+            }
+
+            if (window.pageYOffset > 300) {
+                scrollTopFab.classList.add('visible');
+            } else {
+                scrollTopFab.classList.remove('visible');
+            }
+        });
+
+        scrollTopFab.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        function copyEmail(e) {
+            const email = 'help.appslab@gmail.com';
+            
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                e.preventDefault();
+                navigator.clipboard.writeText(email).then(() => {
+                    showToast('Email copied to clipboard!');
+                }).catch(() => {
+                    window.location.href = 'mailto:' + email;
+                });
+            }
+        }
+
+        function showToast(message) {
+            const toast = document.createElement('div');
+            toast.textContent = message;
+            toast.style.cssText = `
+                position: fixed;
+                bottom: 80px;
+                left: 50%;
+                transform: translateX(-50%);
+                background-color: var(--md-sys-color-on-surface);
+                color: var(--md-sys-color-surface);
+                padding: 12px 24px;
+                border-radius: 8px;
+                font-size: 14px;
+                box-shadow: var(--md-sys-elevation-3);
+                z-index: 1000;
+                animation: fadeIn 0.3s ease-out;
+            `;
+            document.body.appendChild(toast);
+            
+            setTimeout(() => {
+                toast.style.animation = 'fadeOut 0.3s ease-out';
+                setTimeout(() => toast.remove(), 300);
+            }, 2000);
+        }
+
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes fadeOut {
+                to {
+                    opacity: 0;
+                    transform: translateX(-50%) translateY(10px);
+                }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>
