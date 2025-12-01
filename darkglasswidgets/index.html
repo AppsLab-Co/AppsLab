@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - DarkGlass Widgets</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <style>
+        :root {
+            --md-sys-color-primary: #6750A4;
+            --md-sys-color-on-primary: #FFFFFF;
+            --md-sys-color-primary-container: #EADDFF;
+            --md-sys-color-on-primary-container: #21005D;
+            --md-sys-color-secondary: #625B71;
+            --md-sys-color-on-secondary: #FFFFFF;
+            --md-sys-color-secondary-container: #E8DEF8;
+            --md-sys-color-on-secondary-container: #1D192B;
+            --md-sys-color-surface: #FEF7FF;
+            --md-sys-color-on-surface: #1D1B20;
+            --md-sys-color-surface-variant: #E7E0EC;
+            --md-sys-color-on-surface-variant: #49454F;
+            --md-sys-color-outline: #79747E;
+            --md-sys-color-outline-variant: #CAC4D0;
+            --md-sys-color-background: #FEF7FF;
+            --md-sys-color-on-background: #1D1B20;
+            
+            --md-sys-elevation-1: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+            --md-sys-elevation-2: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+            --md-sys-elevation-3: 0px 4px 8px 3px rgba(0, 0, 0, 0.15), 0px 1px 3px rgba(0, 0, 0, 0.3);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--md-sys-color-background);
+            color: var(--md-sys-color-on-background);
+            line-height: 1.6;
+        }
+
+        /* Material 3 Top App Bar */
+        .md-top-app-bar {
+            background-color: var(--md-sys-color-surface);
+            color: var(--md-sys-color-on-surface);
+            padding: 8px 16px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: var(--md-sys-elevation-2);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .md-top-app-bar.elevated {
+            box-shadow: var(--md-sys-elevation-3);
+        }
+
+        .app-bar-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            min-height: 64px;
+        }
+
+        .app-logo {
+            height: 40px;
+            width: 40px;
+            object-fit: contain;
+            transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .app-logo:hover {
+            transform: scale(1.05);
+        }
+
+        .app-title {
+            font-size: 20px;
+            font-weight: 500;
+            letter-spacing: 0;
+            color: var(--md-sys-color-on-surface);
+        }
+
+        /* Container */
+        .container {
+            max-width: 840px;
+            margin: 0 auto;
+            padding: 24px 16px 80px;
+        }
+
+        /* Material 3 Typography Scale */
+        .md-typescale-display-large {
+            font-size: 57px;
+            font-weight: 400;
+            line-height: 64px;
+            letter-spacing: -0.25px;
+        }
+
+        .md-typescale-headline-large {
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 40px;
+            letter-spacing: 0;
+            color: var(--md-sys-color-on-surface);
+            margin-bottom: 16px;
+        }
+
+        .md-typescale-headline-medium {
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 36px;
+            letter-spacing: 0;
+            color: var(--md-sys-color-on-surface);
+            margin: 40px 0 16px;
+        }
+
+        .md-typescale-title-large {
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 28px;
+            letter-spacing: 0;
+            color: var(--md-sys-color-on-surface);
+            margin-bottom: 8px;
+        }
+
+        .md-typescale-body-large {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.5px;
+            color: var(--md-sys-color-on-surface-variant);
+            margin-bottom: 16px;
+        }
+
+        .md-typescale-body-medium {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: 0.25px;
+            color: var(--md-sys-color-on-surface-variant);
+        }
+
+        .md-typescale-label-large {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            letter-spacing: 0.1px;
+        }
+
+        /* Material 3 Card */
+        .md-card {
+            background-color: var(--md-sys-color-surface-variant);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 24px;
+            box-shadow: var(--md-sys-elevation-1);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .md-card:hover {
+            box-shadow: var(--md-sys-elevation-2);
+        }
+
+        /* List Styles */
+        ul {
+            margin-left: 24px;
+            margin-bottom: 16px;
+        }
+
+        li {
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.5px;
+            color: var(--md-sys-color-on-surface-variant);
+            margin-bottom: 8px;
+        }
+
+        strong {
+            color: var(--md-sys-color-on-surface);
+            font-weight: 500;
+        }
+
+        /* Material 3 Filled Button */
+        .md-filled-button {
+            background-color: var(--md-sys-color-primary);
+            color: var(--md-sys-color-on-primary);
+            padding: 10px 24px;
+            border: none;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0.1px;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: var(--md-sys-elevation-1);
+        }
+
+        .md-filled-button:hover {
+            box-shadow: var(--md-sys-elevation-2);
+            background-color: #7965af;
+        }
+
+        .md-filled-button:active {
+            box-shadow: var(--md-sys-elevation-1);
+        }
+
+        /* Material 3 Outlined Card */
+        .md-outlined-card {
+            background-color: var(--md-sys-color-surface);
+            border: 1px solid var(--md-sys-color-outline-variant);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 32px 0;
+        }
+
+        /* Material 3 Chips */
+        .md-chip {
+            display: inline-flex;
+            align-items: center;
+            background-color: var(--md-sys-color-secondary-container);
+            color: var(--md-sys-color-on-secondary-container);
+            padding: 6px 16px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0.1px;
+            margin-bottom: 16px;
+        }
+
+        /* Divider */
+        .md-divider {
+            height: 1px;
+            background-color: var(--md-sys-color-outline-variant);
+            margin: 32px 0;
+        }
+
+        /* Footer */
+        .md-footer {
+            border-top: 1px solid var(--md-sys-color-outline-variant);
+            padding: 24px 0;
+            margin-top: 64px;
+        }
+
+        .footer-content {
+            max-width: 840px;
+            margin: 0 auto;
+            padding: 0 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .footer-text {
+            color: var(--md-sys-color-on-surface-variant);
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.25px;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 24px;
+        }
+
+        .footer-links a {
+            color: var(--md-sys-color-primary);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0.1px;
+            transition: color 0.2s ease;
+        }
+
+        .footer-links a:hover {
+            color: #7965af;
+        }
+
+        /* Material 3 FAB */
+        .md-fab {
+            position: fixed;
+            bottom: 16px;
+            right: 16px;
+            width: 56px;
+            height: 56px;
+            background-color: var(--md-sys-color-primary-container);
+            color: var(--md-sys-color-on-primary-container);
+            border: none;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: var(--md-sys-elevation-3);
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            opacity: 0;
+            transform: scale(0);
+        }
+
+        .md-fab.visible {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .md-fab:hover {
+            background-color: #d6c3f7;
+        }
+
+        .md-fab:active {
+            box-shadow: var(--md-sys-elevation-1);
+        }
+
+        .material-symbols-outlined {
+            font-size: 24px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .app-bar-content {
+                min-height: 56px;
+            }
+
+            .app-logo {
+                height: 36px;
+                width: 36px;
+            }
+
+            .app-title {
+                font-size: 18px;
+            }
+
+            .container {
+                padding: 16px 16px 60px;
+            }
+
+            .md-typescale-headline-large {
+                font-size: 28px;
+                line-height: 36px;
+            }
+
+            .md-typescale-headline-medium {
+                font-size: 24px;
+                line-height: 32px;
+                margin: 32px 0 12px;
+            }
+
+            .md-card, .md-outlined-card {
+                padding: 16px;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-links {
+                flex-direction: column;
+                gap: 12px;
+            }
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Material 3 Top App Bar -->
+    <header class="md-top-app-bar" id="topAppBar">
+        <div class="app-bar-content">
+              <img src="images/logo.png" alt="DarkGlass Widgets" class="app-logo" loading="eager">
+            <h1 class="app-title">DarkGlass Widgets</h1>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container fade-in">
+        <h1 class="md-typescale-headline-large">Privacy Policy</h1>
+        <p class="md-typescale-body-medium" style="margin-bottom: 32px;">Last updated: December 01, 2025</p>
+
+        <section>
+            <p class="md-typescale-body-large">At DarkGlass Widgets, operated by AppsLab Co., we take your privacy seriously. This Privacy Policy explains how our mobile application works and how we handle your information.</p>
+        </section>
+
+        <div class="md-card">
+            <p class="md-typescale-body-large" style="margin-bottom: 0;"><strong>🔒 Your Privacy is Protected:</strong> DarkGlass Widgets is designed with your privacy in mind. The app only requests permissions essential for widget functionality. Your personal data stays on your device and is never shared with anyone for marketing or advertising purposes.</p>
+        </div>
+
+        <section>
+            <h2 class="md-typescale-headline-medium">Permissions We Request</h2>
+            <p class="md-typescale-body-large">DarkGlass Widgets requires certain permissions to provide its core functionality. All permissions are used exclusively for app features and your data stays on your device:</p>
+            <ul>
+                <li><strong>Location Permission:</strong> Required to display location-based information on your widgets such as weather and location name. Your location is only used to fetch weather data and is never stored on any external server or used for any other purpose.</li>
+                <li><strong>Foreground Service:</strong> The app uses a foreground service to ensure real-time updates. This keeps your widget looking fresh, accurate, and fully responsive throughout the day.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 class="md-typescale-headline-medium">Information Used by the App</h2>
+            <p class="md-typescale-body-large">DarkGlass Widgets may use the following information for widget functionality:</p>
+            <ul>
+                <li><strong>Usage Data:</strong> Information such as device type, operating system version, and app usage patterns to ensure widgets work correctly on your device.</li>
+                <li><strong>Device Information:</strong> Device model, unique device identifiers, and IP address for proper widget display and functionality.</li>
+                <li><strong>Personal Data:</strong> If you choose to display personal photos or images in your widgets, this data is accessed and used solely for widget display purposes.</li>
+            </ul>
+            <div class="md-card">
+                <p class="md-typescale-body-large" style="margin-bottom: 0;"><strong>Important:</strong> All this information is processed and stored locally on your device only. We do not transmit, collect, or share any of this data to external servers or third parties.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="md-typescale-headline-medium">Weather Service</h2>
+            <p class="md-typescale-body-large">To display accurate weather information on your widgets, DarkGlass Widgets uses WeatherAPI, a trusted third-party weather service.</p>
+            <ul>
+                <li><strong>What is sent:</strong> Only your location coordinates are sent to fetch current weather data for your area.</li>
+                <li><strong>Purpose:</strong> This is solely used to display weather information on your widgets.</li>
+                <li><strong>Your Privacy:</strong> No personal information, device data, or any other details are shared. Only the minimum required location data is used to retrieve weather updates.</li>
+            </ul>
+            <p class="md-typescale-body-large">For more information about how WeatherAPI handles data, you can review their <a href="https://www.weatherapi.com/privacy.aspx" target="_blank" style="color: var(--md-sys-color-primary); text-decoration: none;">Privacy Policy</a>.</p>
+        </section>
+
+        <section>
+            <h2 class="md-typescale-headline-medium">Data Storage</h2>
+            <p class="md-typescale-body-large">DarkGlass Widgets stores all data locally on your device. This includes:</p>
+            <ul>
+                <li>Widget configurations and preferences</li>
+                <li>Location data for widget display</li>
+                <li>App settings and customizations</li>
+            </ul>
+            <p class="md-typescale-body-large">This data is stored only on your device and is not accessible to us or any third parties. When you uninstall the app, all locally stored data is automatically deleted.</p>
+        </section>
+
+        <section>
+            <h2 class="md-typescale-headline-medium">Your Data Stays Safe</h2>
+            <p class="md-typescale-body-large">We are committed to protecting your privacy:</p>
+            <ul>
+                <li>We do NOT collect or store your personal information on any server</li>
+                <li>We do NOT share your data with third parties for marketing or advertising</li>
+                <li>We do NOT use analytics or tracking services</li>
+                <li>We do NOT display advertisements</li>
+                <li>We do NOT sell or rent your information to anyone</li>
+                <li>Location data is only used to fetch weather updates and is not stored or shared for any other purpose</li>
+            </ul>
+        </section>
+
+        <div class="md-outlined-card">
+            <span class="md-chip">Important</span>
+            <h3 class="md-typescale-title-large">Children's Privacy</h3>
+            <p class="md-typescale-body-large">Our Service does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from anyone under the age of 13. If You are a parent or guardian and You are aware that Your child has provided Us with Personal Data, please contact Us. If We become aware that We have collected Personal Data from anyone under the age of 13 without verification of parental consent, We take steps to remove that information.</p>
+        </div>
+
+        <section>
+            <h2 class="md-typescale-headline-medium">Data Security</h2>
+            <p class="md-typescale-body-large">Your data remains secure on your device, protected by your device's built-in security features. The only external communication is with WeatherAPI to fetch weather data, which uses secure connections to protect your information during transmission.</p>
+        </section>
+
+        <section>
+            <h2 class="md-typescale-headline-medium">Changes to This Privacy Policy</h2>
+            <p class="md-typescale-body-large">We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last updated" date. You are advised to review this Privacy Policy periodically for any changes.</p>
+        </section>
+
+        <section>
+            <h2 class="md-typescale-headline-medium">Your Consent</h2>
+            <p class="md-typescale-body-large">By using DarkGlass Widgets, you consent to our Privacy Policy and agree to its terms.</p>
+        </section>
+
+        <div class="md-divider"></div>
+
+        <div class="md-outlined-card">
+            <h3 class="md-typescale-title-large" style="margin-bottom: 16px;">Contact Us</h3>
+            <p class="md-typescale-body-large" style="margin-bottom: 24px;">If you have any questions or concerns about this Privacy Policy, please contact us:</p>
+            
+            <p class="md-typescale-body-large"><strong>Email:</strong> <a href="mailto:help.appslab@gmail.com" style="color: var(--md-sys-color-primary); text-decoration: none; cursor: pointer;" onclick="copyEmail(event)">help.appslab@gmail.com</a></p>
+            
+            <p class="md-typescale-body-large"><strong>Company:</strong> AppsLab Co.</p>
+        </div>
+    </main>
+
+    <!-- Material 3 Footer -->
+    <footer class="md-footer">
+        <div class="footer-content">
+            <div class="footer-text">© 2025 AppsLab Co. All rights reserved.</div>
+        </div>
+    </footer>
+
+    <!-- Material 3 FAB (Scroll to Top) -->
+    <button class="md-fab" id="scrollTopFab" aria-label="Scroll to top">
+        <span class="material-symbols-outlined">arrow_upward</span>
+    </button>
+
+    <script>
+        // Top App Bar elevation on scroll
+        const topAppBar = document.getElementById('topAppBar');
+        const scrollTopFab = document.getElementById('scrollTopFab');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 0) {
+                topAppBar.classList.add('elevated');
+            } else {
+                topAppBar.classList.remove('elevated');
+            }
+
+            // Show FAB after scrolling 300px
+            if (window.pageYOffset > 300) {
+                scrollTopFab.classList.add('visible');
+            } else {
+                scrollTopFab.classList.remove('visible');
+            }
+        });
+
+        // Scroll to top functionality
+        scrollTopFab.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Copy email function with toast notification
+        function copyEmail(e) {
+            const email = 'help.appslab@gmail.com';
+            
+            // Try to copy to clipboard
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                e.preventDefault();
+                navigator.clipboard.writeText(email).then(() => {
+                    showToast('Email copied to clipboard!');
+                }).catch(() => {
+                    // If clipboard fails, just open mailto
+                    window.location.href = 'mailto:' + email;
+                });
+            }
+        }
+
+        // Show toast notification
+        function showToast(message) {
+            const toast = document.createElement('div');
+            toast.textContent = message;
+            toast.style.cssText = `
+                position: fixed;
+                bottom: 80px;
+                left: 50%;
+                transform: translateX(-50%);
+                background-color: var(--md-sys-color-on-surface);
+                color: var(--md-sys-color-surface);
+                padding: 12px 24px;
+                border-radius: 8px;
+                font-size: 14px;
+                box-shadow: var(--md-sys-elevation-3);
+                z-index: 1000;
+                animation: fadeIn 0.3s ease-out;
+            `;
+            document.body.appendChild(toast);
+            
+            setTimeout(() => {
+                toast.style.animation = 'fadeOut 0.3s ease-out';
+                setTimeout(() => toast.remove(), 300);
+            }, 2000);
+        }
+    </script>
+</body>
+</html>
