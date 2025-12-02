@@ -7,19 +7,19 @@
         {
           "name": "Glass Widgets",
           "description": "Beautiful, Glass-Style Widgets Compatible with Any Android Device.",
-          "image_url": "https://i.ibb.co/5g1Mcv7N/1024-5.png",
+          "image_url": "https://i.ibb.co/bgBjqxY8/glass-widgets.png",
           "url": "https://play.google.com/store/apps/details?id=com.appslab.glass.widgets"
         },
         {
           "name": "Material You Widgets",
           "description": "Make your home screen stand out with Material 3 Expressive Widgets.",
-          "image_url": "https://i.ibb.co/5Nv2JFC/1024-4.png",
+          "image_url": "https://i.ibb.co/hFq9x7yJ/material-widgets.png",
           "url": "https://play.google.com/store/apps/details?id=com.appslab.materialyou.widgetspro"
         },
         {
           "name": "NewThing Widgets Pro",
           "description": "Bake your home screen stand out with NewThing Widgets Pro!",
-          "image_url": "https://i.ibb.co/GvpnR7hQ/1024-new.png",
+          "image_url": "https://i.ibb.co/pvSdKYQZ/newthing-widgets.png",
           "url": "https://play.google.com/store/apps/details?id=com.appslab.nothing.widgetspro"
         }
       ]
@@ -31,8 +31,26 @@
         {
           "name": "Glass Icon Pack",
           "description": "Transform your Android device with Glass Icon Pack,",
-          "image_url": "https://i.ibb.co/pBVX0szV/1024-6.png",
+          "image_url": "https://i.ibb.co/20yPYpZ8/glass-icon.png",
           "url": "https://play.google.com/store/apps/details?id=com.appslab.glass.iconpack"
+        },
+        {
+          "name": "DarkGlass Icon Pack",
+          "description": "Transform your Android device with DarkGlass Icon Pack,",
+          "image_url": "https://i.ibb.co/Yz22Zht/dark-glass-icon-pack.png",
+          "url": "https://play.google.com/store/apps/details?id=com.appslab.darkglass.iconpack"
+        }
+      ]
+    },
+    {
+      "title": "WatchFaces",
+      "type": "watchfaces",
+      "items": [
+        {
+          "name": "FaceLab: WatchFaces",
+          "description": "Discover Watch Faces (Wear OS 6+)",
+          "image_url": "https://i.ibb.co/bRjB52Q9/watch-face1.png",
+          "url": "https://play.google.com/store/apps/details?id=com.appslab.watchfaces.marketplacek"
         }
       ]
     },
@@ -43,7 +61,7 @@
         {
           "name": "Telegram",
           "description": "Join Community",
-          "image_url": "https://i.ibb.co/fzPycWf4/users-cm9bc9h4301mcqp01u1ejd12r-pnj-QPHNx-Ior-VAPl-J-bento-telegram.png",
+          "image_url": "https://i.ibb.co/yCBkcxh/telegram.png",
           "url": "https://t.me/AppsLab_Co"
         }
       ]
